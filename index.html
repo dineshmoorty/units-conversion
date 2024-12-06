@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/general.css">
+  <link rel="stylesheet" href="./styles/mile_to_km.css">
+  <script src="./src/mile_to_km.js"></script>
+  <script src="./src/km_to_mile.js"></script>
+  <title>Units Conversion</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <h1>Units Conversion's</h1>
+      <h4>Mile to Kilometer</h4>
+      <div class="mile-to-km">
+        <p>Enter Mile</p>
+        <input type="text" class="mile limit" placeholder="Enter Mile" onkeydown="enter(event)" >
+        <button class="calculate-km" onclick="updateCalculation() ">Calculate</button>
+        <p class="outputofmile output"></p>
+        <button class="clear" onclick="clearoutput()">Clear</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
